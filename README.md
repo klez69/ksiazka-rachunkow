@@ -1,5 +1,7 @@
 # Książka Rachunków
 
+<img src="KsiazkaRachunkow/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png" alt="Ikona appki" width="96">
+
 Prosta aplikacja na iPhone i Maca do zapisywania rachunków/faktur. Jedna osoba, bez logowania, bez internetu — wszystkie dane trzymane lokalnie na urządzeniu.
 
 <img src="screenshots/lista-glowna.png" alt="Ekran główny appki na iPhonie" width="320">
