@@ -2,6 +2,8 @@
 
 Prosta aplikacja na iPhone i Maca do zapisywania rachunków/faktur. Jedna osoba, bez logowania, bez internetu — wszystkie dane trzymane lokalnie na urządzeniu.
 
+<img src="screenshots/lista-glowna.png" alt="Ekran główny appki na iPhonie" width="320">
+
 ## Funkcje
 
 - Lista rachunków pogrupowana po miesiącach, z sumą zaległych i najbliższym terminem
