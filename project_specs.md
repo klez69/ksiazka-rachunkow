@@ -12,7 +12,7 @@ Prosta aplikacja na iPhone i Maca do zapisywania rachunków/faktur (jedna osoba,
 - **Minimalne wersje systemu:** iOS 18+, macOS 15+ (żeby SwiftData działało stabilnie)
 - **Fonty:** Fraunces, IBM Plex Sans, IBM Plex Mono (darmowe, Google Fonts) — pliki dołączone do projektu, appka działa offline, bez pobierania fontów z internetu
 
-## Design (wzięty z Twojego artefaktu "Książka Rachunków")
+## Design
 Appka ma wyglądać jak ten webowy artefakt, przeniesiony na SwiftUI — ciepły, "papierowy" styl, nie typowy jaskrawy design appki.
 
 - **Kolory (jasny motyw):** tło `#f4f2ec`, karty/wiersze `#fffefb`, tekst główny `#1d2420`, tekst przygaszony `#55605a`, linie `#ddd7c8`, zielony akcent `#3a5c4d` (ciemniejszy `#2a4438` na hover/aktywne), tło akcentu `#e2ebe4`, kolor ostrzeżenia (zaległe/braki) `#a8402c`, kolor "zrobione" `#7c8a80`
