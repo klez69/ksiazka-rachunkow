@@ -1,0 +1,428 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		034DDA0A6C7B7851F514284B /* BillDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02C33D34A32A44B0BE51CAE /* BillDetailView.swift */; };
+		0E8643FDA5E2B07C67C83537 /* BillRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A424FD49663612B48B4EE4BE /* BillRowView.swift */; };
+		1031824960A2FB060B2678B1 /* ImportDokumentu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692092928C34382FFF108C48 /* ImportDokumentu.swift */; };
+		2142860674D93CEF22D5A578 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DB735CA41A5881DB9FC0CC2 /* Assets.xcassets */; };
+		2BA5ADF92564E8C06B1CE5CA /* OCRService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BB4D32CFE452779F47AC07 /* OCRService.swift */; };
+		4D487F9740F669ECBC047AC8 /* Rachunek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B868ABDA5B20E9CD24E651 /* Rachunek.swift */; };
+		52D9D34589A96B54B6E993C4 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8342F5057B55ADF650679FEC /* Theme.swift */; };
+		5A45D7D7E4A7828804FAF034 /* BillFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39E8DF98ED8035948BDBC95 /* BillFormView.swift */; };
+		846AF853964946F075FF2F5B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633DD87664D8370CA0C2021A /* ContentView.swift */; };
+		8F5D32EDE42DEAA08C2AD6C8 /* RachunekSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A634F5129EC3981EA505E4D /* RachunekSync.swift */; };
+		92389EFB9AAB8764A2556F58 /* MiesiacGrupa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF011AFBD00F5BEF5778920 /* MiesiacGrupa.swift */; };
+		B1045E09A68634BCFB228668 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6982B379BBEE09298CEAAE /* ScannerView.swift */; };
+		DECB716128431B48BEC26F51 /* CalendarReminderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BA2F8AB1866DF2BEF6F674 /* CalendarReminderService.swift */; };
+		F3167FD3912615E7DE3113F1 /* KsiazkaRachunkowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7BA7DB8CB827CD7A4141E5 /* KsiazkaRachunkowApp.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		05BB4D32CFE452779F47AC07 /* OCRService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRService.swift; sourceTree = "<group>"; };
+		2F7BA7DB8CB827CD7A4141E5 /* KsiazkaRachunkowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KsiazkaRachunkowApp.swift; sourceTree = "<group>"; };
+		4AF011AFBD00F5BEF5778920 /* MiesiacGrupa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiesiacGrupa.swift; sourceTree = "<group>"; };
+		5A634F5129EC3981EA505E4D /* RachunekSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RachunekSync.swift; sourceTree = "<group>"; };
+		633DD87664D8370CA0C2021A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		692092928C34382FFF108C48 /* ImportDokumentu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportDokumentu.swift; sourceTree = "<group>"; };
+		6DB735CA41A5881DB9FC0CC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		82192567357D463840B9D1EA /* KsiazkaRachunkow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KsiazkaRachunkow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8342F5057B55ADF650679FEC /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		96B868ABDA5B20E9CD24E651 /* Rachunek.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rachunek.swift; sourceTree = "<group>"; };
+		A424FD49663612B48B4EE4BE /* BillRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillRowView.swift; sourceTree = "<group>"; };
+		C02C33D34A32A44B0BE51CAE /* BillDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillDetailView.swift; sourceTree = "<group>"; };
+		C39E8DF98ED8035948BDBC95 /* BillFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillFormView.swift; sourceTree = "<group>"; };
+		F6BA2F8AB1866DF2BEF6F674 /* CalendarReminderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarReminderService.swift; sourceTree = "<group>"; };
+		FE6982B379BBEE09298CEAAE /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		482D6B2361B8C2B7C280DE84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		37BA030DBE37FAADD8224E46 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				05BB4D32CFE452779F47AC07 /* OCRService.swift */,
+				F6BA2F8AB1866DF2BEF6F674 /* CalendarReminderService.swift */,
+				5A634F5129EC3981EA505E4D /* RachunekSync.swift */,
+				692092928C34382FFF108C48 /* ImportDokumentu.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5E370C4F14E6F495A46BA693 = {
+			isa = PBXGroup;
+			children = (
+				7DB90B15AAF059488A2AF662 /* KsiazkaRachunkow */,
+				617E033EDA7F29338C9AEA6E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		617E033EDA7F29338C9AEA6E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				82192567357D463840B9D1EA /* KsiazkaRachunkow.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB90B15AAF059488A2AF662 /* KsiazkaRachunkow */ = {
+			isa = PBXGroup;
+			children = (
+				2F7BA7DB8CB827CD7A4141E5 /* KsiazkaRachunkowApp.swift */,
+				CE27E3ECFAA309A8736FE15B /* Models */,
+				8BAEB2CBF97851116A9DAC7E /* DesignSystem */,
+				37BA030DBE37FAADD8224E46 /* Services */,
+				E9DB24212EBE2E345BD764C2 /* Views */,
+				6DB735CA41A5881DB9FC0CC2 /* Assets.xcassets */,
+			);
+			path = KsiazkaRachunkow;
+			sourceTree = "<group>";
+		};
+		8BAEB2CBF97851116A9DAC7E /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				8342F5057B55ADF650679FEC /* Theme.swift */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		CE27E3ECFAA309A8736FE15B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				96B868ABDA5B20E9CD24E651 /* Rachunek.swift */,
+				4AF011AFBD00F5BEF5778920 /* MiesiacGrupa.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E9DB24212EBE2E345BD764C2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A424FD49663612B48B4EE4BE /* BillRowView.swift */,
+				C39E8DF98ED8035948BDBC95 /* BillFormView.swift */,
+				C02C33D34A32A44B0BE51CAE /* BillDetailView.swift */,
+				FE6982B379BBEE09298CEAAE /* ScannerView.swift */,
+				633DD87664D8370CA0C2021A /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A0215416E603B2A47C4EE413 /* KsiazkaRachunkow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CC0C4CBA764DC43C1EC559B /* Build configuration list for PBXNativeTarget "KsiazkaRachunkow" */;
+			buildPhases = (
+				5C1B532F462E41DAC46B01DD /* Sources */,
+				482D6B2361B8C2B7C280DE84 /* Frameworks */,
+				6560905FDC717F2F1976A49F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KsiazkaRachunkow;
+			productName = KsiazkaRachunkow;
+			productReference = 82192567357D463840B9D1EA /* KsiazkaRachunkow.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6FDD2C5A815DAE3588F17864 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					A0215416E603B2A47C4EE413 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+				};
+			};
+			buildConfigurationList = 4DDA926CC52925268656BDF7 /* Build configuration list for PBXProject "KsiazkaRachunkow" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = pl;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				pl,
+				Base,
+			);
+			mainGroup = 5E370C4F14E6F495A46BA693;
+			productRefGroup = 617E033EDA7F29338C9AEA6E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A0215416E603B2A47C4EE413 /* KsiazkaRachunkow */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6560905FDC717F2F1976A49F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2142860674D93CEF22D5A578 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5C1B532F462E41DAC46B01DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3167FD3912615E7DE3113F1 /* KsiazkaRachunkowApp.swift in Sources */,
+				4D487F9740F669ECBC047AC8 /* Rachunek.swift in Sources */,
+				92389EFB9AAB8764A2556F58 /* MiesiacGrupa.swift in Sources */,
+				52D9D34589A96B54B6E993C4 /* Theme.swift in Sources */,
+				2BA5ADF92564E8C06B1CE5CA /* OCRService.swift in Sources */,
+				DECB716128431B48BEC26F51 /* CalendarReminderService.swift in Sources */,
+				8F5D32EDE42DEAA08C2AD6C8 /* RachunekSync.swift in Sources */,
+				1031824960A2FB060B2678B1 /* ImportDokumentu.swift in Sources */,
+				0E8643FDA5E2B07C67C83537 /* BillRowView.swift in Sources */,
+				5A45D7D7E4A7828804FAF034 /* BillFormView.swift in Sources */,
+				034DDA0A6C7B7851F514284B /* BillDetailView.swift in Sources */,
+				B1045E09A68634BCFB228668 /* ScannerView.swift in Sources */,
+				846AF853964946F075FF2F5B /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2A08B2D2E593D2BEB0929727 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 9A9Z5WTC7F;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		38AB98D73925E0D0D988B647 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 9A9Z5WTC7F;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		623F2703CBA3BCE455B10157 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColorCustom;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Książka Rachunków";
+				INFOPLIST_KEY_NSCalendarsFullAccessUsageDescription = "Dostęp do Kalendarza pozwala dodawać terminy płatności rachunków.";
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "Dostęp do Kalendarza pozwala dodawać terminy płatności rachunków.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Aparat jest używany do skanowania rachunków.";
+				INFOPLIST_KEY_NSRemindersFullAccessUsageDescription = "Dostęp do Przypomnień pozwala tworzyć przypomnienia o płatności.";
+				INFOPLIST_KEY_NSRemindersUsageDescription = "Dostęp do Przypomnień pozwala tworzyć przypomnienia o płatności.";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pl.rojek.ksiazkarachunkow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CBB7CDC5E45994E7DF157603 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColorCustom;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Książka Rachunków";
+				INFOPLIST_KEY_NSCalendarsFullAccessUsageDescription = "Dostęp do Kalendarza pozwala dodawać terminy płatności rachunków.";
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "Dostęp do Kalendarza pozwala dodawać terminy płatności rachunków.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Aparat jest używany do skanowania rachunków.";
+				INFOPLIST_KEY_NSRemindersFullAccessUsageDescription = "Dostęp do Przypomnień pozwala tworzyć przypomnienia o płatności.";
+				INFOPLIST_KEY_NSRemindersUsageDescription = "Dostęp do Przypomnień pozwala tworzyć przypomnienia o płatności.";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pl.rojek.ksiazkarachunkow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4DDA926CC52925268656BDF7 /* Build configuration list for PBXProject "KsiazkaRachunkow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38AB98D73925E0D0D988B647 /* Debug */,
+				2A08B2D2E593D2BEB0929727 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CC0C4CBA764DC43C1EC559B /* Build configuration list for PBXNativeTarget "KsiazkaRachunkow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBB7CDC5E45994E7DF157603 /* Debug */,
+				623F2703CBA3BCE455B10157 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6FDD2C5A815DAE3588F17864 /* Project object */;
+}
