@@ -50,3 +50,9 @@ Kolorystyka i układ są wzorowane na webowym prototypie appki (ciepła, "papier
 ## Status
 
 Wersja robocza (v1) — pełna specyfikacja w [project_specs.md](project_specs.md).
+
+## Kod QR do repozytorium
+
+Zeskanowanie poniższego kodu otwiera to repozytorium na GitHub (kod źródłowy) — **nie instaluje appki** na telefonie. Żeby uruchomić appkę na iPhonie, trzeba zbudować ją w Xcode (patrz sekcja "Uruchomienie" wyżej) albo skonfigurować dystrybucję przez TestFlight.
+
+<img src="screenshots/qr-github.png" alt="Kod QR do repozytorium na GitHub" width="200">
