@@ -21,6 +21,9 @@
 		B1045E09A68634BCFB228668 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6982B379BBEE09298CEAAE /* ScannerView.swift */; };
 		DECB716128431B48BEC26F51 /* CalendarReminderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BA2F8AB1866DF2BEF6F674 /* CalendarReminderService.swift */; };
 		F3167FD3912615E7DE3113F1 /* KsiazkaRachunkowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7BA7DB8CB827CD7A4141E5 /* KsiazkaRachunkowApp.swift */; };
+		DEFBC95E9BD4BD17288F601C /* TekstRozpoznawania.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBD3398378EE6C48283E076 /* TekstRozpoznawania.swift */; };
+		493A76A77E3320DC249860A8 /* LiveScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2D2675124D1875173F912D /* LiveScannerView.swift */; };
+		3789E19FFF0BB7F3FD4DD7F2 /* LiveSkanowanieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0133480C81E8EFECF516BC63 /* LiveSkanowanieView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,9 @@
 		C39E8DF98ED8035948BDBC95 /* BillFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillFormView.swift; sourceTree = "<group>"; };
 		F6BA2F8AB1866DF2BEF6F674 /* CalendarReminderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarReminderService.swift; sourceTree = "<group>"; };
 		FE6982B379BBEE09298CEAAE /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
+		3FBD3398378EE6C48283E076 /* TekstRozpoznawania.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TekstRozpoznawania.swift; sourceTree = "<group>"; };
+		AF2D2675124D1875173F912D /* LiveScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveScannerView.swift; sourceTree = "<group>"; };
+		0133480C81E8EFECF516BC63 /* LiveSkanowanieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveSkanowanieView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,7 @@
 				F6BA2F8AB1866DF2BEF6F674 /* CalendarReminderService.swift */,
 				5A634F5129EC3981EA505E4D /* RachunekSync.swift */,
 				692092928C34382FFF108C48 /* ImportDokumentu.swift */,
+				3FBD3398378EE6C48283E076 /* TekstRozpoznawania.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -117,6 +124,8 @@
 				C02C33D34A32A44B0BE51CAE /* BillDetailView.swift */,
 				FE6982B379BBEE09298CEAAE /* ScannerView.swift */,
 				633DD87664D8370CA0C2021A /* ContentView.swift */,
+				AF2D2675124D1875173F912D /* LiveScannerView.swift */,
+				0133480C81E8EFECF516BC63 /* LiveSkanowanieView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -203,6 +212,9 @@
 				034DDA0A6C7B7851F514284B /* BillDetailView.swift in Sources */,
 				B1045E09A68634BCFB228668 /* ScannerView.swift in Sources */,
 				846AF853964946F075FF2F5B /* ContentView.swift in Sources */,
+				DEFBC95E9BD4BD17288F601C /* TekstRozpoznawania.swift in Sources */,
+				493A76A77E3320DC249860A8 /* LiveScannerView.swift in Sources */,
+				3789E19FFF0BB7F3FD4DD7F2 /* LiveSkanowanieView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

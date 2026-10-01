@@ -8,8 +8,11 @@ struct ContentView: View {
     @State private var pokazZaplacone = false
     @State private var pokazNowyFormularz = false
     @State private var pokazSkaner = false
+    @State private var pokazLiveSkaner = false
     @State private var trwaRozpoznawanie = false
     @State private var wstepneDane: WstepneDaneSkanu?
+    @State private var zywaKwota: Double?
+    @State private var zywaData: Date?
 
     private struct WstepneDaneSkanu: Identifiable {
         let id = UUID()
@@ -79,6 +82,18 @@ struct ContentView: View {
             }
             #endif
             #if os(iOS)
+            .fullScreenCover(isPresented: $pokazLiveSkaner) {
+                LiveSkanowanieView(
+                    naDalej: { kwota, data in
+                        zywaKwota = kwota
+                        zywaData = data
+                        pokazLiveSkaner = false
+                        pokazSkaner = true
+                    },
+                    naAnulowanie: { pokazLiveSkaner = false }
+                )
+                .ignoresSafeArea()
+            }
             .fullScreenCover(isPresented: $pokazSkaner) {
                 ScannerView(naZakonczenie: obsluzZeskanowaneZdjecie, naAnulowanie: { pokazSkaner = false })
                     .ignoresSafeArea()
@@ -222,7 +237,13 @@ struct ContentView: View {
 
     private func rozpocznijSkanowanie() {
         #if os(iOS)
-        pokazSkaner = true
+        if LiveScannerDostepnosc.dostepny {
+            zywaKwota = nil
+            zywaData = nil
+            pokazLiveSkaner = true
+        } else {
+            pokazSkaner = true
+        }
         #elseif os(macOS)
         guard let dane = ImportDokumentu.wybierzPlik() else { return }
         obsluzZeskanowaneZdjecie(dane)
@@ -234,12 +255,20 @@ struct ContentView: View {
         pokazSkaner = false
         #endif
         trwaRozpoznawanie = true
+        let zKwota = zywaKwota
+        let zData = zywaData
+        zywaKwota = nil
+        zywaData = nil
         Task {
             let obraz = platformImage(from: dane)
             let wynik = obraz != nil ? await OCRService.rozpoznaj(z: obraz!) : OCRService.Wynik(kwota: nil, data: nil)
             await MainActor.run {
                 trwaRozpoznawanie = false
-                wstepneDane = WstepneDaneSkanu(zdjecie: dane, kwota: wynik.kwota, data: wynik.data)
+                wstepneDane = WstepneDaneSkanu(
+                    zdjecie: dane,
+                    kwota: zKwota ?? wynik.kwota,
+                    data: zData ?? wynik.data
+                )
             }
         }
     }

@@ -4,6 +4,8 @@ import SwiftData
 struct BillFormView: View {
     @Environment(\.modelContext) private var context
     @Environment(\.dismiss) private var dismiss
+    @Query(sort: \Rachunek.dataUtworzenia, order: .reverse) private var wszystkieRachunki: [Rachunek]
+    @FocusState private var nazwaWFokusie: Bool
 
     var edytowanyRachunek: Rachunek?
     var wstepneZdjecie: Data?
@@ -26,11 +28,51 @@ struct BillFormView: View {
 
     private var edycja: Bool { edytowanyRachunek != nil }
 
+    /// Wcześniej używane nazwy (najnowsze pierwsze, bez duplikatów), dopasowane do tego co już wpisano.
+    private var sugerowaneNazwy: [String] {
+        var widziane = Set<String>()
+        var wynik: [String] = []
+        let szukana = nazwa.trimmingCharacters(in: .whitespaces)
+        for r in wszystkieRachunki {
+            let kandydat = r.nazwa
+            guard !kandydat.isEmpty, kandydat.caseInsensitiveCompare(szukana) != .orderedSame else { continue }
+            guard szukana.isEmpty || kandydat.localizedCaseInsensitiveContains(szukana) else { continue }
+            guard widziane.insert(kandydat.lowercased()).inserted else { continue }
+            wynik.append(kandydat)
+            if wynik.count == 6 { break }
+        }
+        return wynik
+    }
+
     var body: some View {
         NavigationStack {
             Form {
                 Section {
                     TextField("Nazwa (od kogo / za co)", text: $nazwa)
+                        .focused($nazwaWFokusie)
+
+                    if nazwaWFokusie && !sugerowaneNazwy.isEmpty {
+                        ScrollView(.horizontal, showsIndicators: false) {
+                            HStack(spacing: 8) {
+                                ForEach(sugerowaneNazwy, id: \.self) { podpowiedz in
+                                    Button {
+                                        nazwa = podpowiedz
+                                    } label: {
+                                        Text(podpowiedz)
+                                            .font(Theme.body(13))
+                                            .padding(.horizontal, 12)
+                                            .padding(.vertical, 6)
+                                            .background(Theme.accentSoft)
+                                            .foregroundStyle(Theme.accentInk)
+                                            .clipShape(Capsule())
+                                    }
+                                    .buttonStyle(.plain)
+                                }
+                            }
+                        }
+                        .listRowInsets(EdgeInsets(top: 4, leading: 16, bottom: 8, trailing: 16))
+                    }
+
                     TextField("Kwota (zł)", text: $kwotaTekst)
                         #if os(iOS)
                         .keyboardType(.decimalPad)
