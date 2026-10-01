@@ -92,7 +92,6 @@ struct ContentView: View {
                     },
                     naAnulowanie: { pokazLiveSkaner = false }
                 )
-                .ignoresSafeArea()
             }
             .fullScreenCover(isPresented: $pokazSkaner) {
                 ScannerView(naZakonczenie: obsluzZeskanowaneZdjecie, naAnulowanie: { pokazSkaner = false })
